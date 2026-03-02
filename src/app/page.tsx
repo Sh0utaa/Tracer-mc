@@ -47,7 +47,7 @@ export default function Home() {
         const result = await response.json();
         const eventId = result.id;
         router.push(
-          `https://tracer-evd-mc.web.cern.ch/?eventId=${eventId}&group=${values.group}`,
+          `https://tracer-mc.up.railway.app/?eventId=${eventId}&group=${values.group}`,
         );
       } catch (error) {
         console.error("Error submitting event:", error);

@@ -16,7 +16,9 @@
     "postinstall": "npx prisma generate",
     "build": "next build",
     "start": "next start -p 8080 -H 0.0.0.0",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma_build": "prisma generate && next build",
+    "migrate": "prisma migrate deploy"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.7.2",
